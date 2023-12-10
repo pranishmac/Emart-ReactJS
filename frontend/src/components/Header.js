@@ -30,7 +30,7 @@ class Header extends Component {
     return (
         
       <nav className="py-6 px-6 flex justify-between items-center border-b border-gray-200">
-        <a href="/" className="text-xl font-semibold">E-mart</a>
+        <a href="/" className="text-xl font-semibold">Service Sage</a>
         <div className="space-x-6">
           {/* Replace the URLs with React Router links */}
           <a href="/items/new" className="text-lg font-semibold hover:text-gray-500">New item</a>

@@ -10,12 +10,9 @@ class Items extends Component {
   }
 
   componentDidMount() {
-    // Replace the API URL with your actual API endpoint
     fetch('/items/itemapi')
       .then(response => response.json())
       .then(data => {
-        // Assuming your API response has 'items' and 'categories' properties
-        // console.log(response);
         this.setState({
           items: data,
           categories: data.map(item => item.category),
@@ -35,7 +32,7 @@ class Items extends Component {
           <div className="grid grid-cols-3 gap-3">
             {items.map(item => (
               <div key={item.id}>
-                <a href={`/item/${item.id}`}>
+                <a href={`/items/${item.id}`}>
                   <div>
                     <img src={item.image} alt={item.name} className="rounded-t-xl" />
                   </div>
