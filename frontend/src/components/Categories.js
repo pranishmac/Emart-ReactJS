@@ -13,8 +13,6 @@ class Items extends Component {
     fetch('/items/catapi')
       .then(response => response.json())
       .then(data => {
-        // Assuming your API response has 'items' and 'categories' properties
-        // console.log(response);
         this.setState({
           categories: data
         });
